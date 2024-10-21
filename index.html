@@ -3,45 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website of Your Name">
   <title>Your Name - Personal Website</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
     }
+
     header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 0;
+      background-color: #2C3E50;
+      color: white;
+      padding: 40px 0;
       text-align: center;
     }
+
     header h1 {
+      font-size: 3em;
       margin: 0;
     }
+
+    header p {
+      font-size: 1.2em;
+      margin: 10px 0 0;
+    }
+
     nav {
-      margin: 20px 0;
+      background-color: #34495E;
+      padding: 10px;
       text-align: center;
     }
+
     nav a {
+      color: white;
       margin: 0 15px;
       text-decoration: none;
-      color: #333;
-      font-weight: bold;
+      font-size: 1.2em;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     section {
-      padding: 20px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
+
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #2C3E50;
+    }
+
     footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #333;
+      background-color: #2C3E50;
       color: white;
-      position: absolute;
+      text-align: center;
+      padding: 20px 0;
+      position: relative;
       bottom: 0;
       width: 100%;
+    }
+
+    .about, .cv, .events {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .cv ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .cv li {
+      margin-bottom: 10px;
+    }
+
+    .events ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      nav a {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
@@ -49,7 +113,7 @@
 
 <header>
   <h1>Your Name</h1>
-  <p>Personal Website</p>
+  <p>Professional Portfolio and CV</p>
 </header>
 
 <nav>
@@ -58,27 +122,33 @@
   <a href="#events">Events</a>
 </nav>
 
-<section id="about">
+<section id="about" class="about">
   <h2>About Me</h2>
-  <p>Here you can add a personal introduction about yourself.</p>
+  <p>Welcome to my personal website! I am [Your Name], a [Your Profession] specializing in [Your Area of Expertise]. With a passion for innovation and a commitment to continuous learning, I strive to deliver impactful solutions in my work.</p>
 </section>
 
-<section id="cv">
-  <h2>CV</h2>
+<section id="cv" class="cv">
+  <h2>Curriculum Vitae</h2>
   <ul>
-    <li>Education: Your education details</li>
-    <li>Experience: Your work experience</li>
-    <li>Skills: Relevant skills you have</li>
+    <li><strong>Education:</strong> [Degree], [University], [Year]</li>
+    <li><strong>Work Experience:</strong> [Job Title] at [Company], [Year-Present]</li>
+    <li><strong>Skills:</strong> [Technical Skills, Soft Skills, etc.]</li>
+    <li><strong>Certifications:</strong> [Certification, Issuer, Year]</li>
+    <li><strong>Publications:</strong> [List publications or notable works]</li>
   </ul>
 </section>
 
-<section id="events">
-  <h2>Recent Events</h2>
-  <p>Publish updates about your recent activities or changes to your personal information.</p>
+<section id="events" class="events">
+  <h2>Latest Events</h2>
+  <ul>
+    <li>[Event 1]: Attended/Presented at [Event/Conference], [Date]</li>
+    <li>[Event 2]: Published a paper on [Topic], [Date]</li>
+    <li>[Event 3]: Joined [Company/Project], [Date]</li>
+  </ul>
 </section>
 
 <footer>
-  <p>© 2024 Simon Bleßmann</p>
+  <p>&copy; 2024 Your Name - All Rights Reserved</p>
 </footer>
 
 </body>
